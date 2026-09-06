@@ -99,7 +99,7 @@ user_id:3
 Finds all documents belonging to user with ID 3 (admin only).
 
 ```textplain
-url:/home/user/documents/report.pdf
+url:/home/<user>/documents/report.pdf
 ```
 
 Finds the local file at that path (resolved to an absolute `file://` URL automatically).

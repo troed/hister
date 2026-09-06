@@ -51,7 +51,7 @@ services:
     restart: unless-stopped
     environment:
       - HISTER__SERVER__ADDRESS=0.0.0.0:4433
-      - HISTER__SERVER__BASE_URL=http://192.168.1.100:4433 # Use your actual IP/hostname
+      - HISTER__SERVER__BASE_URL=http://192.0.2.100:4433 # Use your actual IP/hostname
     volumes:
       - ./data:/hister/data
     ports:

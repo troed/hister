@@ -557,7 +557,7 @@ func Test_normalizeFileURL(t *testing.T) {
 	}{
 		{input: "https://example.com/path", wantExact: "https://example.com/path"},
 		{input: "*foo", wantExact: "*foo"},
-		{input: "/home/user/doc.pdf", wantHas: []string{"file://", "/home/user/doc.pdf"}},
+		{input: "/home/<user>/doc.pdf", wantHas: []string{"file://", "/home/<user>/doc.pdf"}},
 		{input: "docs/file.txt", wantHas: []string{"file://"}},
 	}
 	for _, tc := range cases {

@@ -37,10 +37,10 @@ You can either use a **static IP**, if you know how to assign one to a computer;
 <details><summary>Static IP</summary>
 
 Assign the Hister server's computer its permanent IP, then register it in `base_url`.
-For example, for the IP `192.168.42.69`:
+For example, for the IP `192.0.2.69`:
 
 ```yaml
-base_url: http://192.168.42.69:4433
+base_url: http://192.0.2.69:4433
 ```
 
 It is also possible to access the Web interface using the computer's hostname even if it has a static IP, which may be easier to remember; but placing the IP in the config should remain more reliable.
@@ -56,12 +56,12 @@ This can be less reliable, because if your computer's IP address may occasionall
    - **Windows**: TODO (note also that you may need to [enable network discovery](https://superuser.com/questions/1560557/can-access-shared-network-files-by-ip-but-not-by-host-name#answer-1560563) for your PC to announce its hostname).
 
 2. Replace `localhost` in `base_url:` with the hostname \*suffixed by `.local`.
-   For example, let's use my laptop's hostname `zonai-goat`, though it can be something like `DESKTOP-D9JCP0Q`.
+   For example, let's use my laptop's hostname `DESKTOP-EXAMPLE`, though it can be something like `my-laptop` on a home network.
 
    ```yaml
    server:
      address: '[::]:4433'
-     base_url: http://zonai-goat.local:4433
+     base_url: http://DESKTOP-EXAMPLE.local:4433
    ```
 
 3. Restart the Hister server, then try accessing the Hister Web interface (preferably from another device!) at the address specified in the `base_url` field.

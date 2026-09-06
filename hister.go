@@ -724,7 +724,7 @@ The QUERY syntax is the same as the search queries.
 
 Examples:
   hister delete "url:https://example.com/page"
-  hister delete "url:file:///home/user/file.pdf"
+  hister delete "url:file:///home/<user>/file.pdf"
   hister delete "domain:example.com"
   hister delete "language:en domain:example.com"
 
